@@ -15,10 +15,11 @@ github からもろもろをダウンロードします．
 
 最後に，html ファイルなど全て，ドキュメントルートへコピーします． ( =/usr/local/www/apacheXX/data/= 以下とか )
 
-: $ cd && git clone https://github.com/mayok/sig-slud.git
-: $ cd sig-slud
+: $ cd && git clone https://github.com/jsai-slud/sig-slud.git
+: $ cd sig-slud/src
+: $ (editting)
 : $ jekyll build
-: $ cp -r _site/* /path/to/document_root
+: $ git push
 
 
 ** スケジュールの追加・編集

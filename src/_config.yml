@@ -7,3 +7,4 @@ paginate: 6
 paginate_path: "6"
 gems: [jekyll-paginate]
 future: true
+destination: ../docs
