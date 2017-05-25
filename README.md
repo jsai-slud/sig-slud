@@ -8,4 +8,4 @@ The docs folder is to be accessed as https://jsai-slud.github.io/sig-slud/
     $ cd sig-slud/src
     $ (editting)
     $ jekyll build
-    $ git push
+    $ git commit -a && git push
