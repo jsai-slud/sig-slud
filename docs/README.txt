@@ -8,18 +8,29 @@
 -- jekyll-paginate, redcarpet, pygments.rb, (as of 2017/05/25 funakoshi)
 - git
 
-** インストール方法
-github からもろもろをダウンロードします．
+** セットアップ・更新方法
+github からもろもろをダウンロードし，gemで必要なパッケージをインストールします．
 
-その後， ~jekyll build~ すると _site 以下に html ファイルが作成されます．
-
-最後に，html ファイルなど全て，ドキュメントルートへコピーします． ( =/usr/local/www/apacheXX/data/= 以下とか )
+jekyll build すると ../docs 下に html ファイルが作成されます．
+githubは jsai-slud/sig-slud/docs を sig-sludのサイトコンテンツとして認識するように設定してあるので，
+git pushすればそれでwebページが更新されます．
 
 : $ cd && git clone https://github.com/jsai-slud/sig-slud.git
 : $ cd sig-slud/src
 : $ (editting)
 : $ jekyll build
-: $ git push
+: $ git commit -a && git push
+
+~jekyll build~の際は，必ず sig-slud/src で実行するように注意してください．
+sig-slud/ で実行すると，生成には見かけ上成功しますが，Warningが大量にでた不良サイトが sig-slud/_site に生成されてしまいます．
+間違ってsig-slud/_site を生成してしまった場合は削除して，sig-slud/src でビルドをやり直してください．
+
+ローカルマシンで更新結果を確認したいときは，ローカルでWebサーバを立ち上げてください．
+macOSの場合：
+$ cd /Library/WebServer/Documents
+$ sudo ln -s <path to sig-slud/docs> sig-slud
+$ sudo apachectl start
+$ open http://localhost/sig-slud/
 
 
 ** スケジュールの追加・編集
@@ -44,7 +55,7 @@ github からもろもろをダウンロードします．
 : ここに本文を書く．
 : ```
 
-以上の作業が終わったら， ~jekyll build~ して，_site 以下の html ファイルなどをドキュメントルートへコピーします．
+以上の作業が終わったら， ~jekyll build~ して，commit & push します．
 
 ** _config.yml について
 _config.yml には，ちょっとした設定が書いてあります．
