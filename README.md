@@ -8,4 +8,5 @@ The docs folder is to be accessed as https://jsai-slud.github.io/sig-slud/
     $ cd sig-slud/src
     $ (editting)
     $ jekyll build       (Execute in sig-slud/src !!)
+    $ git add <new files...>   (If you have new files to be managed by Git)
     $ git commit -a && git push
