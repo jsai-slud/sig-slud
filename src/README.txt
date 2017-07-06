@@ -19,6 +19,7 @@ git pushすればそれでwebページが更新されます．
 : $ cd sig-slud/src
 : $ (editting)
 : $ jekyll build
+: $ git add <新しく作成したポストおよび生成されたファイル>
 : $ git commit -a && git push
 
 ~jekyll build~の際は，必ず sig-slud/src で実行するように注意してください．
