@@ -3,10 +3,15 @@
 use utf8;
 use strict;
 
+# usege: <this> [max line length (default:72)] < IN > OUT
+
 binmode STDIN, ":utf8";
 binmode STDOUT, ":utf8";
 
 my $LEN = 72;
+if ($ARGV[0] ne "") {
+    $LEN = $ARGV[0];
+}
 
 ## wrap lines to fit in $LEN columns
 while(<STDIN>) {
