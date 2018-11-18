@@ -1,15 +1,16 @@
 \documentclass[a4paper,10pt]{jarticle}
 
 \usepackage{longtable}
-\usepackage[top=20truemm,bottom=20truemm,left=15truemm,right=15truemm]{geometry}
+\usepackage[top=20truemm,bottom=0truemm,left=15truemm,right=15truemm]{geometry}
 
-\def\GM{千葉大学文学部 　伝　康晴}
+\def\GM{千葉大学文学部・伝 康晴}
 \def\ORDER{XX}
 \def\NOTE{招待講演を除く}
 %\def\NOTE{１日目．招待講演を除く} % ２日開催で分割する場合
 %\def\NOTE{２日目．招待講演を除く} % ２日開催で分割する場合
 
 \begin{document}
+\pagestyle{empty}
 
 \begin{flushright}
 人工知能学会　言語・音声理解と対話処理研究会\\
@@ -45,20 +46,26 @@
 第{\ORDER}回 人工知能学会 言語・音声理解と対話処理研究会プログラム（\NOTE）	
 \end{center}
 
-\input{candidates}
+%\small %% if too many to fit in 2 pages
+%\renewcommand{\arraystretch}{1.28}
 
-%\begin{tabular}{|p{1.5cm}|p{15cm}|}
-%\hline
-% 推薦する & 演題 \\
-%\hline
-% &1.【若手】相槌・フィラー予測とのマルチタスク学習によるターンテイキング予測\\
-% &原康平・井上昂治・高梨克也・河原達也（京大）\\
-%\hline
-%&2.単語の分散表現を用いた相槌生成タイミングの予測\\
-%&黒田和矢・狩野芳伸（静岡大）\\
-%\hline
-%\end{tabular}
-
+\input{candidates} % assumes longtable input such as:
+%% \begin{longtable}[c]{|p{1.5cm}|p{15cm}|}
+%% \hline
+%%  推薦する & 演題 \\\endfirsthead
+%% \hline
+%%  推薦する & 演題 \\\endhead
+%% \hline
+%% &1.【若手】相槌・フィラー予測とのマルチタスク学習によるターンテイキング予測\\
+%% &原康平・井上昂治・高梨克也・河原達也（京大）\\
+%% \hline
+%% &2.単語の分散表現を用いた相槌生成タイミングの予測\\
+%% &黒田和矢・狩野芳伸（静岡大）\\
+%% \hline
+%% &3.【若手】初対面対話における好感のモデリングと発話構成要素の選択\\
+%% &田中滉己・井上昂治・中村静・高梨克也・河原達也（京大）\\
+%% \hline
+%% \end{longtable}
 \end{document}
 
 
