@@ -31,8 +31,8 @@ while(<>) {
 	$inItem = 0;
 	out();
     }
-#    if (/\d?\d\./) { # 1a
-    if (/\(\d?\d\)/) { # 1b
+    if (/\d?\d\./) { # 1a
+#    if (/\(\d?\d\)/) { # 1b
 	if ($inItem) {
 	    # item連続．これまでのbufferを出力して，bufferリセット
 	    out();
