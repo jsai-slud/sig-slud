@@ -140,8 +140,9 @@
 **13:15-14:15  特別セッション 招待講演2**
 
         21. 複数人会話データを活用した音声言語処理とアプリケーション
-              増村 亮 先生（NTTメディアインテリジェンス研究所）(<a href="https://speakerdeck.com/ryomasumura/fu-shu-ren-hui-hua-detawohuo-yong-sitayin-sheng-yan-yu-chu-li-toapurikesiyon-sludyan-jiu-hui-zhao-dai-jiang-yan">スライド</a>)
-	    
+              増村 亮 先生（NTTメディアインテリジェンス研究所）
+
+[【スライド】](https://speakerdeck.com/ryomasumura/fu-shu-ren-hui-hua-detawohuo-yong-sitayin-sheng-yan-yu-chu-li-toapurikesiyon-sludyan-jiu-hui-zhao-dai-jiang-yan)
 
 **14:15-14:25  休憩（10分）**
 
