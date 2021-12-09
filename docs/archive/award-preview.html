@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>受賞者一覧</title>
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <link rel=stylesheet href="/sig-slud/css/style.css">
+        <link rel=stylesheet href="/sig-slud/css/modal.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <link rel=stylesheet href="/sig-slud/css/drawic-font.css">
+    </head>
+
+    <body>
+        <!-- Modal template -->
+        <div id="modal">
+          <div class="background"></div>
+          <div class="container-back">
+              <div class="container">
+                <div class="header">
+                  <a href="#" class="close x-close" title="Close this modal." data-dismiss="modal">
+                    <i class="fa fa-times fa-2x"></i>
+                  </a>
+                </div>
+                <p class="article"></p>
+                <div class="footer">
+                  <a href="#" class="close" title="Close this modal." data-dismiss="modal">
+                    <span type="button" class="btn-c">Close</span>
+                  </a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+        <!-- end Modal -->
+
+
+          <div class="content-wrapper">
+            <section class="head">
+              <h2>
+                <span>
+                  <a href="http://www.ai-gakkai.or.jp/jsai/">人工知能学会</a> 
+                </span>
+                <br>
+                <span>言語・音声理解と対話処理研究会</span>
+                <span>SIG-SLUD</span>
+              </h2>
+              <nav>
+                <ul class="top-menu">
+                  <li class="menu-items ">
+                    <a href="/sig-slud/">Top</a>
+                  </li>
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">Events </a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item" href="/sig-slud/events/index.html">
+                            <span class="select-menu-item-heading">スケジュール一覧</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="/sig-slud/events/present.html">
+                            <span class="select-menu-item-heading">研究会で発表したい</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="/sig-slud/events/join.html">
+                            <span class="select-menu-item-heading">研究会に参加したい</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!--
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">Reports </a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item">
+                            <span class="select-menu-item-heading">研究報告</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  -->
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">Archive </a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item" href="/sig-slud/archive/award.html">
+                            <span class="select-menu-item-heading">受賞者一覧</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="/sig-slud/archive/material.html">
+                            <span class="select-menu-item-heading">招待講演・チュートリアル・国際会議報告の資料など</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="/sig-slud/archive/past-activities.html">
+                            <span class="select-menu-item-heading">過去の活動</span>
+                          </a>
+                          <!--<a class="select-menu-modal-item" href="#">
+                            <span class="select-menu-item-heading">以前の活動履歴</span>
+                          </a>
+                          <a class="select-menu-modal-item">
+                              <a href="//www.lai.kyutech.ac.jp/sig-slud/home.html">旧 SIG-SLUD Web サイト</a></span>
+                          </a>-->
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="menu-items minibutton ">
+                    <a class="select-menu-button" href="#">About </a>
+                    <div class="select-menu-modal-holder">
+                      <div class="select-menu-modal" aria-hidden="true">
+                        <div class="select-menu-modal-list">
+                          <a class="select-menu-modal-item" href="/sig-slud/about/committee.html">
+                            <span class="select-menu-item-heading">研究会運営委員一覧</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="/sig-slud/about/faq.html">
+                            <span class="select-menu-item-heading">問い合わせ</span>
+                          </a>
+                          <a class="select-menu-modal-item" href="/sig-slud/about/field.html">
+                            <span class="select-menu-item-heading">主要な研究分野</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+<!--
+                  <li class="menu-items minibutton ">
+                    <a href="https://twitter.com/sigslud"><span class="drawic drawic-twitter"></span></a>
+                  </li>
+-->
+                </ul>
+              </nav>
+              <hr>
+            </section>
+
+<div class="box">
+  <div class="box-header box-header-color-purple">
+    <span>受賞者一覧</span>
+  </div>
+  <div class="box-content">
+  </div>
+</div>
+
+  <div class="box-content markdown">
+    <h2>人工知能学会研究会優秀賞 (JSAI Incentive Award)</h2>
+
+    <p>本研究会で発表された研究の中で優秀と認められるものを本研究会から人工知能学会に推薦し，学会で選定されたものを会長名で表彰するものです．</p>
+
+    <p>例年1-3件の発表が受賞しています．</p>
+
+    <p>過去の受賞者は<a href="https://www.ai-gakkai.or.jp/about/award/jsai_award-sig/">人工知能学会受賞者【研究会優秀賞】のページ</a>をご覧ください．</p>
+
+    <h2>研究会独自賞</h2>
+
+    <p>本研究会で開催されたイベントにおいて，本研究会独自の選考方法において選考し，研究会主査名で表彰するものです．以下断りがない限り，「若手」とは開催年度の4月1日において30歳未満の者を指します．また選考においては利害関係者を排除しています．</p>
+
+<h3>第93回研究会（第12回対話システムシンポジウム）（2021年度）(12th Dialogue System Symposium)</h3>
+<ul>
+<li><p>第12回対話システムシンポジウム 若手優秀賞 (Young Researcher Award for Excellent Research)</p>
+<ul>
+<li><p>寺西 帝乃：発問型チュータリングシステムにおける解答の自動評価</p>
+<p>（共著者：荒木 雅弘）</p>
+</li>
+<li><p>佐伯 真於：InteLLA：適応的な質問戦略を有するスピーキング能力判定会話エージェント</p>
+<p>（共著者：松浦瑠希，鈴木駿吾，宮城琴佳，小林哲則，松山洋一）</p>
+</li>
+<li><p>山下 紗苗：雑談に介入する際に必要な対話要約の調査</p>
+<p>（共著者：東中 竜一郎）</p>
+</li>
+
+</ul>
+<p>選考方法：発表者が若手の一般またはポスター発表の中から，研究内容が優れており，今後の対話システム研究の発展に寄与するものを実行委員の評価に基づき選出した．</p>
+</li>
+<li><p>第12回対話システムシンポジウム 若手萌芽賞 (Young Researcher Award for Emerging Research)</p>
+<ul>
+<li><p>上垣 貴嗣：からかいのユーモア応答生成を目的としたコーパスの構築と分類</p>
+<p>（共著者：清水健吾，菊池英明）</p>
+</li>
+
+</li>
+
+</ul>
+<p>選考方法：発表者が若手の一般またはポスター発表の中から，研究テーマの新規性・独創性・発展性が高いものを実行委員の評価に基づき選出した．</p>
+</li>
+
+</ul>
+<ul>
+<li><p>第4回対話システムライブコンペティション最優秀賞 (Best Performance Award)・優秀賞 (Outstanding Performance Award)・入賞 (Honorable Mention Award)</p>
+<ul>
+<li><p>オープントラック最優秀賞</p>
+<ul>
+<li>LINENLP: 山崎天，坂田亘，川本稔己，小林滉河，Nguyen Tung，上村卓史，中町礼文，李聖哲，佐藤敏紀</li>
+
+</ul>
+</li>
+<li><p>オープントラック優秀賞（2件）</p>
+<ul>
+<li>NTTCS: 杉山弘晃，有本庸浩，水上雅博，千葉祐弥，中嶋秀治，成松宏美（二位）</li>
+<li>TohokuNLP: 長澤春希，工藤慧音，宮脇峻平，有山知希，成田風香，岸波洋介，佐藤志貴，乾健太郎（三位）</li>
+
+</ul>
+</li>
+<li><p>シチュエーショントラック最優秀賞</p>
+<ul>
+<li>LINENLP: 川本稔己，山崎天，坂田亘，佐藤敏紀</li>
+
+</ul>
+</li>
+<li><p>シチュエーショントラック優秀賞</p>
+<ul>
+<li>FCL: 白井宏美（二位）</li>
+<li>TeamMirai: 久保祐喜，生嶋竜実，二瀬颯斗，武田龍，駒谷和範（三位）</li>
+
+</ul>
+</li>
+<li><p>シチュエーショントラック入賞</p>
+<ul>
+<li>oto: 乙武香里（四位）</li>
+</ul>
+</ul>
+
+
+<p>選考方法：対話システムライブコンペティションにエントリしたチームの対話システムに対し，クラウドワーカーとの対話を実施し，評価値を得た．その平均でシステムをランキングし，上位チームを本選に進めた．本選に進むチームは，エントリされたチーム数およびシステムどうしの評価値の開きを考慮し，ライブコンペティション実行委員の合議により決定した．本選では，対話システムシンポジウムの参加者により投票を行い，得られた評価値が一位のものを最優秀賞，二位および三位を優秀賞，本選通過チームを入賞とした．</p>
+
+</li>
+
+</ul>
+<h3>第90回研究会（第11回対話システムシンポジウム）（2020年度）(11th Dialogue System Symposium)</h3>
+<ul>
+<li><p>第11回対話システムシンポジウム 若手優秀賞（Young Researcher Award for Excellent Research）</p>
+<ul>
+<li><p>山崎天（東京大）：タスク指向対話におけるニューラル句抽出を用いた End-to-End 発話生成　 </p>
+    <p>（共著者：相澤彰子）</p></li>
+
+<li><p>山本賢太（京都大）：VAEを用いた半教師あり学習による音声対話システムのためのキャラクタ表現</p>
+    <p>（共著者：井上昂治，河原達也）</p></li>
+
+</ul>
+
+  <p>選考方法：発表者が若手のである一般またはポスター発表から研究内容が優れており，今後の対話システム研究の発展に寄与するものをシンポジウム実行委員の投票により選出した．</p>
+</li>
+<li><p>第11回対話システムシンポジウム 若手萌芽賞（Young Researcher Award for Emerging Research）</p>
+<ul>
+<li><p>田中翔平（奈良先端）：対話エージェントの機能に着目した気の利いた応答を含むコーパスの収集</p>
+<p>（共著者：吉野幸一郎，須藤克仁，中村哲）</p>
+</li>
+<li><p>片山颯人（早稲田大）：Timing Generating Networks: 会話の文脈を考慮したターンテイキングのタイミング推定</p>
+<p>（共著者：藤江真也，佐久間仁，松山洋一，小林哲則）</p>
+</li>
+
+</ul>
+<p>選考方法：発表者が若手である一般またはポスター発表から研究テーマの新規性・独創性・発展性が高いものをシンポジウム実行委員の投票により選出した．</p>
+</li>
+
+</ul>
+<ul>
+<li><p>第3回対話システムライブコンペティション最優秀賞 (Best Performance Award)・優秀賞 (Outstanding Performance Award)</p>
+<ul>
+<li><p>最優秀賞（オープントラック）</p>
+<ul>
+<li>NTTCS: 杉山弘晃，成松宏美，水上雅博，有本庸浩，千葉祐弥，目黒豊美，中嶋秀治</li>
+
+</ul>
+</li>
+<li><p>優秀賞（オープントラック）</p>
+<ul>
+<li>ILYS: 藤原吏生，岸波洋介，今野颯人，佐藤志貴，佐藤汰亮，宮脇峻平，加藤拓真，鈴木潤，乾健太郎（二位）</li>
+
+</ul>
+</li>
+<li><p>最優秀賞（シチュエーショントラック）</p>
+<ul>
+<li>FCL: 白井宏美</li>
+
+</ul>
+</li>
+<li><p>優秀賞（シチュエーショントラック）</p>
+<ul>
+<li>MUwsl: 佐藤真，高木友博（二位）</li>
+
+</ul>
+</li>
+
+</ul>
+<p>選考方法：エントリしたチームの対話システムに対し，クラウドワーカーとの対話を実施し，評価値を得た．その平均でシステムをランキングし，上位チームを本選に進めた．本選に進むチームは，エントリされたチーム数およびシステムどうしの評価値の開きを考慮し，ライブコンペティション実行委員の合議により決定した．本選では，対話システムシンポジウムの参加者により投票を行い，得られた評価値が一位のものを最優秀賞，二位および三位を優秀賞とした．オーガナイザのチームは賞の対象から外した．</p>
+</li>
+
+</ul>
+</li>
+
+</ul>
+
+<h3>第87回研究会（第10回対話システムシンポジウム）（2019年度）(10th Dialogue System Symposium)</h3>
+<ul>
+<li><p>第10回対話システムシンポジウム 若手萌芽ポスター賞 (Young Researcher Poster Award)</p>
+<ul>
+<li><p>佐藤志貴（東北大）：負例を厳選した対話応答選択テストセット構築の試みと分析</p>
+<p>（共著者：赤間怜奈，大内啓樹，鈴木潤，乾健太郎）</p>
+</li>
+
+</ul>
+<p>選考方法：若手萌芽ポスターセッションでの発表者の中から独創性・将来性が高いものを会期中に実行委員による投票にて決定した．</p>
+</li>
+<li><p>第2回対話システムライブコンペティション最優秀賞 (Best Performance Award)・優秀賞 (Outstanding Performance Award)</p>
+<ul>
+<li><p>最優秀賞（オープントラック）</p>
+<ul>
+<li>TokoChanTeam: Dolça Tellols，小河晴菜</li>
+
+</ul>
+</li>
+<li><p>優秀賞（オープントラック）</p>
+<ul>
+<li>NTTCS: 杉山弘晃，成松宏美，水上雅博，有本庸浩（二位）</li>
+<li>UEC: 稲葉通将（三位）</li>
+
+</ul>
+</li>
+<li><p>最優秀賞（シチュエーショントラック）</p>
+<ul>
+<li>OUHRI: 中島圭祐，駒谷和範，中野幹生</li>
+
+</ul>
+</li>
+<li><p>優秀賞（シチュエーショントラック）</p>
+<ul>
+<li>NTTCS: 成松宏美・杉山弘晃・水上雅博・有本庸浩（二位）</li>
+
+</ul>
+</li>
+
+</ul>
+<p>選考方法：エントリしたチームの対話システムに対し，クラウドワーカーとの対話を実施し，評価値を得た．その平均でシステムをランキングし，上位チームを本選に進めた．本選に進むチームは，エントリされたチーム数およびシステムどうしの評価値の開きを考慮し，ライブコンペティション実行委員の合議により決定した．本選では，対話システムシンポジウムの参加者により投票を行い，得られた評価値が一位のものを最優秀賞，二位および三位を優秀賞とした．オーガナイザのチームは賞の対象から外した．</p>
+</li>
+
+</ul>
+</li>
+
+</ul>
+
+<h3>第84回研究会（第9回対話システムシンポジウム）（2018年度）(9th Dialogue System Symposium)</h3>
+<ul>
+<li><p>第９回対話システムシンポジウム 若手奨励賞 (Young Researcher Award)</p>
+<ul>
+<li><p>宇田川拓真（東大）：連続的かつ部分観測的コンテクストにおける基盤化対話コーパスの構築と分析</p>
+<p>（共著者：相澤彰子）</p>
+</li>
+<li><p>藤岡勇真（阪大）：対話システムにおける知識グラフの埋め込み表現を用いた応答生成の試み</p>
+<p>（共著者：林克彦・中野幹生・駒谷和範）</p>
+</li>
+
+</ul>
+<p>選考方法：若手ポスターセッションでの発表者の中から独創性・将来性が高いものを会期中に実行委員による投票にて決定した．</p>
+</li>
+<li><p>対話システムライブコンペティション最優秀賞 (Best Performance Award)・優秀賞 (Outstanding Performance Award)</p>
+<ul>
+<li><p>最優秀賞</p>
+<ul>
+<li>NTTCS: 杉山弘晃，成松宏美，水上雅博，有本庸浩（NTT）</li>
+
+</ul>
+</li>
+<li><p>優秀賞（2件）</p>
+<ul>
+<li>NTTdocomo: 角森唯子，大西可奈子，藤本拓，角野公亮，吉村健，礒田佳徳（二位）</li>
+<li>teamzunko: 阿部香央莉，佐藤志貴，佐藤拓海，藤井諒，松田耕史，鈴木正敏，山口健史，赤間怜奈，大内啓樹，鈴木潤，乾健太郎（三位）</li>
+
+</ul>
+</li>
+
+</ul>
+<p>選考方法：エントリしたチームの対話システムに対し，クラウドワーカーとの対話を実施し，評価値を得た．その平均でシステムをランキングし，上位チームを本選に進めた．本選に進むチームは，エントリされたチーム数およびシステムどうしの評価値の開きを考慮し，ライブコンペティション実行委員の合議により決定した．本選では，対話システムシンポジウムの参加者により投票を行い，得られた評価値が一位のものを最優秀賞，二位および三位を優秀賞とした．</p>
+</li>
+
+</ul>
+</li>
+
+<h3>第81回研究会（第8回対話システムシンポジウム）（2017年度）(8th Dialogue System Symposium)</h3>
+<ul>
+<li><p>第８回対話システムシンポジウム 若手奨励賞 (Young Researcher Award)</p>
+<ul>
+<li><p>井上 昂治 （京大）：潜在キャラクタモデルによるリアルタイム対話エンゲージメント推定</p>
+<p>（共著者： Divesh Lala・Pierrick Milhorat・高梨 克也・河原 達也）</p>
+</li>
+<li><p>赤間 怜奈 （東北大）：発話の語の文体ベクトルの半教師あり学習</p>
+<p>（共著者： 横井 祥・渡邉 研斗・乾 健太郎）</p>
+</li>
+
+</ul>
+<p>選考方法：若手ポスターセッションでの発表の中から，独創性・将来性が高い発表を実行委員内での投票にて決定</p>
+</li>
+
+</ul>
+</li>
+<h3>第78回研究会（第7回対話システムシンポジウム）（2016年度）(7th Dialogue System Symposium)</h3>
+<ul>
+<li><p>第７回対話システムシンポジウム 若手奨励賞 (Young Researcher Award)</p>
+<ul>
+<li><p>小堀嵩博（電通大）：雑談によりユーザに良い印象を与えるインタビュー対話システム</p>
+<p>（共著者: 中野幹生・中村友昭）</p>
+</li>
+<li><p>水上雅博（奈良先端大）：エントレインメント分析に基づく用例選択モデルの提案</p>
+<p>（共著者: 吉野幸一郎・Graham Neubig・中村哲）</p>
+</li>
+
+</ul>
+<p>選考方法：若手ポスターセッションでの発表の中から，独創性・将来性が高い発表を実行委員内での投票にて決定</p>
+<p>&nbsp;</p>
+</li>
+
+</ul>
+<p>&nbsp;</p>
+</li>
+
+
+</div>
+
+
+
+ <footer>
+          <p>Copyright © SIG-SLUD All Rights Reserved.</p>
+</footer>
+          </div> <!-- content-wrapper -->
+        </div> <!-- content -->
+    
+        <!-- Java script -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/sig-slud/js/modal.js"></script>
+        <script src="/sig-slud/js/nav.js"></script>
+        <script src="/sig-slud/js/box-height.js"></script>
+        <!--[if lte IE 9]>
+          <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+          <script src="/sig-slud/js/ie9-transition.js"></script>
+        <![endif]-->
+
+    </body>
+</html>
