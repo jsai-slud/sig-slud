@@ -71,14 +71,14 @@ ul.sub-menu {
   margin:0;
 }
 */
-ul li:hover > ul {
+/* ul li:hover > ul {
   display:block;
   visibility: visible;
   width: 230px;
   position: absolute;
   left: -20px;
   top: 30px;
-}
+} */
 nav ul:after {
   content: "";
   display: block;
@@ -146,9 +146,9 @@ nav ul {
 nav ul li ul {
   transition-duration: visibility 2s ease-out 0.5s;
 }
-nav ul li:hover ul {
+/*nav ul li:hover ul {
   visibility: visible;
-}
+}*/
 .navlist {
   position: relative;
 }
