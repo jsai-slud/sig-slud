@@ -1,0 +1,376 @@
+body {
+  font-size:12pt;
+  color: #393939;
+  font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  margin:0;
+  padding:0;
+}
+.content {
+  min-width:1140px;
+  min-height:100%;
+  margin:0;
+  padding: 0;
+}
+.content-wrapper {
+  width: 1090px;
+  margin: 0 auto;
+}
+a,
+a:link,
+a:visited {
+  color: #0022BB;
+  text-decoration:none;
+}
+ul li a {
+  color:#39b;
+  text-decoration:none;
+}
+a:hover.schedule-link {
+  bottom:1px;
+  border-width:0 0 1px;
+  border-style:solid;
+  border-color: red;
+}
+.schedule-header {
+    margin-left: -40px;
+}
+.schedule-list  {
+    display: flex;
+    margin: 4px 0;
+    padding: 0;
+    list-style: none;
+}
+.schedule-list span {
+    font-size: 12px;
+    min-width: 230px;
+}
+.schedule-list a {
+    margin-bottom: 1px;
+}
+.schedule-list a:hover {
+    margin-bottom: 0;
+    border-bottom: 1px solid red;
+}
+.schedule-list div:nth-child(2) {
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+/*
+ul li a:hover {
+  bottom: 1px;
+  border-width:0 0 1px;
+  border-style:solid;
+  border-color:red;
+}
+ul.sub-menu {
+  display:none;
+  visibility:hidden;
+  z-index:999;
+  padding: 0 4px 0 4px;
+  margin:0;
+}
+*/
+/* ul li:hover > ul {
+  display:block;
+  visibility: visible;
+  width: 230px;
+  position: absolute;
+  left: -20px;
+  top: 30px;
+} */
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav ul ul {
+  background-color: #f1f1f1;
+  border-radius:5px;
+  border: 1px solid #ddd;
+}
+.head {
+  padding-top:25px;
+}
+.head h2 {
+  float: left;
+  font-size:1.6em;
+}
+nav {
+  padding-top:40px;
+  font-size:16px;
+}
+.top-menu {
+  display: table;
+  list-style: none;
+  padding-left:30px;
+  position: relative;
+  top: 10px;
+  margin:0;
+  border-spacing: 8px 0;
+  border-collapse: separate;
+  float:right;
+}
+.top-menu:after {
+  content: "";
+  clear: right;
+}
+.top-menu .menu-items {
+  display:table-cell;
+  position: relative;
+  padding: 4px 8px;
+}
+.clearfix:after{
+  clear:both;
+}
+hr {
+  border: 0;
+  height: 0;
+  margin: 8px 0 20px;
+  border-top: 1px solid #eee;
+  clear: both;
+}
+nav ul li > a {
+  width: 120px;
+}
+nav ul li {
+  list-style: none;
+  padding: 4px 5px;
+  margin:4px 0;
+}
+nav ul {
+  position: relative;
+  margin: 1px 6px 12px 0;
+  padding: 0 0 0 16px;
+}
+nav ul li ul {
+  transition-duration: visibility 2s ease-out 0.5s;
+}
+nav ul li:hover ul {
+  visibility: visible;
+}
+.navlist {
+  position: relative;
+}
+.menu-right-angle {
+  margin-top:4px;
+  /*
+  position: absolute;
+  top:0;
+  left:110%;
+  */
+}
+.box {
+  margin-bottom: 50px;
+}
+.box-header {
+  position: relative;
+  font-size:1.2em;
+  font-weight:600;
+  color: white;
+  padding: 10px;
+  padding-left:20px;
+  margin: 0 0 24px;
+}
+.box-header:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  border-width: 20px 0 0 20px;
+  border-style: solid;
+  display:block;
+  width: 0;
+}
+.box-header-color-blue {
+  background: #0e5276;
+}
+.box-header-color-blue:after {
+  content: "";
+  border-color: #0e5276 transparent;
+}
+.box-header-color-green {
+  background: green;
+}
+.box-header-color-green:after {
+  content: "";
+  border-color: green transparent;
+}
+.box-header-color-purple {
+  background: #421C52;
+}
+.box-header-color-purple:after {
+  content: "";
+  border-color: #421C52 transparent;
+}
+.box-header-color-red {
+  background: #7F1917;
+}
+.box-header-color-red:after {
+  content: "";
+  border-color: #7F1917 transparent;
+}
+  
+.box-content {
+  margin-left:10px;
+}
+.box-frame {
+  border: 1px solid #f1f1f1;
+  margin-bottom:30px;
+  background-color:#f1f1f1;
+  box-shadow: 3px 3px 3px #bbb;
+}
+.year {
+  font-size:15px;
+  font-weight:bold;
+}
+.date {
+  width: 270px;
+  float:left;
+  background-color:green;
+  color: white;
+  padding: 2px 0 2px 12px;
+}
+.program {
+  width:630px;
+  float:left;
+  background-color:white;
+  padding:15px 0 15px 8px;
+  line-height:30px;
+}
+.program-title span{
+  font-size:17px;
+  font-weight:600;
+  color:#0e5276;
+}
+.location {
+  color:black;
+}
+.state {
+  float:left;
+  background-color:white;
+  width:138px;
+  height:90px;
+  line-height:90px;
+  padding:0 10px;
+}
+.clearfix:after {
+  content: "";
+  clear:both;
+  display:block;
+}
+footer {
+  padding:30px 0 30px;
+  clear:both;
+}
+a.close {
+  text-decoration:none;
+}
+.btn
+{
+  border-style:none;
+  border-radius:5px;
+}
+.btn-c {
+  font-weight:bold;
+  margin-left:30px;
+  padding:10px 30px;
+  background-color:#ccc;
+  color:#555;
+}
+.btn-s {
+  padding: 3px ;
+  background-color: #dfdfdf;
+  color:#666;
+}
+.btn-s:hover {
+  background-color:#cfcfcf;
+  color:#5f5f5f;
+}
+.btn-c:hover {
+  background-color:#bfbfbf;
+  color:#4f4f4f;
+}
+p {
+  font-size: 16px;
+}
+.faq {
+  border-bottom: 1px solid;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+.question {
+  font-weight:600;
+  margin: 6px 0;
+}
+.answer p {
+  margin: 2px 0 0 12px;
+}
+.header-title {
+  font-style:bold;
+}
+.desc{
+  list-style:none;
+  margin:0 0 0 1em;
+}
+.address:before {
+  content: attr(data-email-name)"\0040";
+}
+.address:after {
+  content: attr(data-email-domain);
+}
+.member-list ul li {
+  width: 500px;
+  list-style:none;
+}
+.member-list ul li:not(:first-child) {
+  margin-top:12px;
+}
+div[aria-hidden="true"]{
+  display:none;
+}
+.select-menu-button {
+  position: relative;
+}
+.select-menu-button:after {
+  font-family: "FontAwesome";
+  content: "\f0d7";
+}
+.select-menu-modal-holder {
+  width: 212px;
+  position: absolute;
+  top: 40px;
+  left:0;
+  z-index:100;
+}
+.select-menu-modal-list {
+  background:#eee;
+}
+.select-menu-modal-item {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding:8px;
+}
+.select-menu-item-heading {
+}
+.menu-items {
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius:5px;
+}
+.select-menu-modal-menu {
+}
+li.menu-items:hover {
+  background:#e7e7e7;
+}
+.btnPressed {
+  box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3) inset;
+  background: #dedede;
+}
+.btnPressed:hover {
+  background: #dedede !important;
+}
+.markdown a {
+ color: #0e5276;
+}
+
