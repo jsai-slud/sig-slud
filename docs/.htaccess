@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/index.html$
+RewriteCond %{REQUEST_URI} !^.*\.(gif|jpg|jpeg|png|swf|css|js)$ [NC]
+RewriteRule ^(.*)$ https://jsai-slud.github.io/sig-slud/ [L,R]
+
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ https://jsai-slud.github.io/sig-slud/ [L,R]
